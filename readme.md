@@ -38,3 +38,7 @@ This uses:
     ```sh
     docker-compose up -d
     ```
+
+## License
+
+[MIT](./license)

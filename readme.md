@@ -10,7 +10,7 @@ This uses:
 - latest of the [Linuxserver Unifi network application](https://docs.linuxserver.io/images/docker-unifi-network-application/)
 
 > [!IMPORTANT]  
-> If you're migrating from the older version of the Unifi controller published by Linuxserver, [follow these instructions](https://docs.linuxserver.io/images/docker-unifi-network-application/#migration-from-unifi-controller) to export _both the settings and history_ before you proceed. You'll need to start these containers first and restore from backup.
+> If you're migrating from the older, deprecated version of the [Unifi controller](https://github.com/linuxserver/docker-unifi-controller) published by Linuxserver, [follow these instructions](https://docs.linuxserver.io/images/docker-unifi-network-application/#migration-from-unifi-controller) to export _both the settings and history_ before you proceed. You'll need to start these containers first and restore from backup.
 
 ## Usage
 

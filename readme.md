@@ -14,20 +14,26 @@ This uses:
 
 ## Usage
 
+1. Clone this repo
+
+    ```bash
+    git clone git@github.com:qbunt/unified.git && cd unified
+    ```
+
 1. Generate two random strings to use as database passwords (ideally in linux)
 
     ```bash
     tr -dc A-Za-z0-9 </dev/urandom | head -c 25; echo
     ```
 
-1. Replace those `REPLACE_ME` in the [.env](./.env) with what you just generated
+1. Replace those `REPLACE_ME` strings in the [.env](./.env) with what you just generated
 
     ```env
     MONGO_ROOT_PASS=yournewsupersecretpassword
     MONGO_PASS=yourothernewsupersecretpassword
     ```
 
-1. Start the containers:
+3. Start the containers:
 
     ```sh
     docker-compose up -d

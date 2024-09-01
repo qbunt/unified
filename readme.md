@@ -4,6 +4,14 @@ A simplified `docker-compose` setup that includes everything to stand up the Lin
 
 This repo offers nothing substantially different than the main linuxserver container other than letting you set two passwords and starting the stack, releasing it because I was annoyed.
 
+This uses:
+
+- mongo v7 (it is pinned, mongo releases do not migrate automatically)
+- latest of the [Linuxserver Unifi network application](https://docs.linuxserver.io/images/docker-unifi-network-application/)
+
+> [!IMPORTANT]  
+> If you're migrating from the older version of the Unifi controller published by Linuxserver, [follow these instructions](https://docs.linuxserver.io/images/docker-unifi-network-application/#migration-from-unifi-controller) to export _both the settings and history_ before you proceed. You'll need to start these containers first and restore from backup.
+
 ## Usage
 
 1. Generate two random strings to use as database passwords (ideally in linux)

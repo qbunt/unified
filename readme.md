@@ -23,7 +23,9 @@ This uses:
 1. Generate two random strings to use as database passwords (ideally in linux)
 
     ```bash
-    tr -dc A-Za-z0-9 </dev/urandom | head -c 25; echo
+
+    cat /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 35 | head -n 1
+
     ```
 
 1. Replace those `REPLACE_ME` strings in the [.env](./.env) with what you just generated
